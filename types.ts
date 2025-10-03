@@ -11,3 +11,24 @@ export interface IProjects {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface IUser {
+  id: number;
+  email: string;
+  name: string;
+  phone: string;
+  photo: string | null;
+  password: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface IBlog {
+  id: number;
+  title: string;
+  content: string;
+  user: IUser;
+  userId: number;
+  createdAt: string;
+  updatedAt: string;
+}
