@@ -20,7 +20,8 @@ const getProjectDetails = async (id: string) => {
 };
 
 const ProjectDetails = async ({ params }: ProjectDetailsProps) => {
-  const project: IProjects = await getProjectDetails(params.id);
+  const { id } = await params;
+  const project: IProjects = await getProjectDetails(id);
 
   return (
     <div className="min-h-screen  text-white p-3">
