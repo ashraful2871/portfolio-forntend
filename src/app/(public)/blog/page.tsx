@@ -8,7 +8,6 @@ const Blogs = async () => {
     { cache: "no-store" }
   );
   const data = await res.json();
-  console.log(data);
 
   return (
     <div className="space-y-5 py-16  bg-black text-[#DAC6A8]">
