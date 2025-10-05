@@ -14,13 +14,16 @@ export const create = async (data: FormData) => {
     throw new Error("Title and content are required");
   }
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/create-blog`, {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-    },
-    body: JSON.stringify(modifiedBlog),
-  });
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/blog/create-blog`,
+    {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(modifiedBlog),
+    }
+  );
 
   const result = await res.json();
 
