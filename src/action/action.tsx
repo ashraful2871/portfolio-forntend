@@ -31,5 +31,5 @@ export const create = async (data: FormData) => {
   if (!result?.id) throw new Error("Blog creation failed");
 
   revalidateTag("BLOGS");
-  redirect("/blogs");
+  redirect("/blog");
 };
