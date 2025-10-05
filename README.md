@@ -1,4 +1,3 @@
-Sure! Here's a **complete, ready-to-copy `README.md`** for your **Portfolio Website (NextJS + Prisma + ExpressJS)** project — formatted, structured, and professional. You can paste this directly into your repository.
 
 ---
 
