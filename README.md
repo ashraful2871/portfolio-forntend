@@ -110,7 +110,7 @@ root/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/portfolio-website.git
+https://github.com/ashraful2871/portfolio-forntend.git
 cd portfolio-website
 ```
 
