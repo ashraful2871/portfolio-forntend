@@ -31,7 +31,6 @@ export default function RegisterForm() {
     try {
       const res = await register(values);
       if (res?.id) {
-        console.log(res);
         toast.success("user registration successfully");
         router.push("/login");
       }

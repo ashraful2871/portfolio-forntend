@@ -44,7 +44,7 @@ export const authOptions: NextAuthOptions = {
               headers: { "Content-Type": "application/json" },
             }
           );
-          console.log(res);
+
           if (!res.ok) {
             console.error("user login failed", await res.text());
             return null;

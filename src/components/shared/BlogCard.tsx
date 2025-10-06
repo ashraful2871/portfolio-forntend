@@ -15,7 +15,7 @@ interface BlogCardProps {
 
 const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
   return (
-    <Card className="max-w-md  my-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <Card className="max-w-md border border-[#DAC6A8] shadow-lg hover:shadow-xl transition-shadow duration-300">
       <CardHeader className="flex items-center gap-4 pb-2">
         <Avatar>
           {blog.user.photo ? (

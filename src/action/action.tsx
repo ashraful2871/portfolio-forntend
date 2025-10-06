@@ -3,6 +3,7 @@ import { revalidateTag } from "next/cache";
 import { redirect } from "next/navigation";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/components/halper/authOption";
+import { toast } from "sonner";
 
 export const create = async (data: FormData) => {
   const session = await getServerSession(authOptions);
@@ -28,8 +29,10 @@ export const create = async (data: FormData) => {
 
   const result = await res.json();
 
+  if (result?.id) {
+    toast.success("Project create successfully");
+  }
   if (!result?.id) throw new Error("Blog creation failed");
-
   revalidateTag("BLOGS");
   redirect("/blog");
 };

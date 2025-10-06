@@ -13,7 +13,7 @@ const AboutMe = () => {
           alt="Ashraful Islam"
           width={400}
           height={400}
-          className="h-[300px] sm:h-[500px] md:h-[600px] lg:h-[600px] mx-auto p-3 object-cover rounded-full border-4 border-[#DAC6A8]"
+          className="h-[500px] sm:h-[500px] md:h-[600px] lg:h-[600px] mx-auto p-3 object-cover rounded-full border-4 border-[#DAC6A8]"
         />
       </div>
 
@@ -41,7 +41,7 @@ const AboutMe = () => {
         </p>
 
         {/* Contact Button */}
-        <div className="mt-8">
+        <div className="mt-8 hidden">
           <button className="flex items-center gap-2 bg-[#D2B48C] text-black px-5 py-2 rounded-md font-medium hover:bg-[#C0A276] transition">
             Contact Me <Phone size={18} />
           </button>

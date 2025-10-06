@@ -32,3 +32,19 @@ export interface IBlog {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface ICreateProject {
+  name: string;
+  image: string;
+  techStack: string;
+  description: string;
+  myContribution?: string;
+  liveLink: string;
+  githubLink: string;
+  challenges: string;
+}
+export interface User {
+  name?: string | null;
+  email?: string | null;
+  id: string;
+}

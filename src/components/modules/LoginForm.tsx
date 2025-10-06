@@ -23,7 +23,6 @@ const LoginForm = () => {
     },
   });
   const onSubmit = async (values: FieldValues) => {
-    console.log(values);
     try {
       //   const res = await login(values);
       //   if (res?.id) {
